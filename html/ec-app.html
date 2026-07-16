@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC応用ページ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="site-shell shop-shell">
+        <header class="topbar">
+            <div class="brand">Shop Demo</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+                <a href="js-only.html">JS Practice</a>
+            </nav>
+        </header>
+
+        <section class="shop-hero">
+            <div>
+                <div class="eyebrow">Daily Pick</div>
+                <h1>あなたの生活を整える、選ぶ楽しさ。</h1>
+                <p>気になるアイテムを見つけて、カートに入れて、合計金額をすぐ確認できるEC風体験です。</p>
+            </div>
+            <div class="hero-badge">
+                <span>今週の特集</span>
+                <strong>新作入荷</strong>
+            </div>
+        </section>
+
+        <section class="shop-toolbar">
+            <div class="search-box">
+                <label for="searchInput">商品検索</label>
+                <input id="searchInput" type="text" placeholder="商品名で探す">
+            </div>
+            <div class="filter-group" id="filterGroup">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="book">Book</button>
+                <button class="filter-chip" data-filter="tech">Tech</button>
+                <button class="filter-chip" data-filter="home">Home</button>
+            </div>
+        </section>
+
+        <section class="shop-layout">
+            <div class="shop-products">
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+
+            <aside class="cart-panel">
+                <div class="cart-card">
+                    <div class="cart-header">
+                        <h2>カート</h2>
+                        <span id="cartCount">0点</span>
+                    </div>
+                    <div id="cartItems" class="cart-items"></div>
+                    <div class="cart-total">
+                        <span>合計</span>
+                        <strong id="cartTotal">¥0</strong>
+                    </div>
+                    <button id="checkoutButton" class="checkout-button">購入手続きへ</button>
+                </div>
+            </aside>
+        </section>
+    </div>
+
+    <script src="../js/ec-app.js"></script>
+</body>
+
+</html>

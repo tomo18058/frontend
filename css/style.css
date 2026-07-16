@@ -1,0 +1,619 @@
+/* ページ全体のデザイン */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  background: linear-gradient(135deg, #f5f7ff, #e6ecff);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.welcome-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: radial-gradient(circle at top, #ffffff, #dbeafe 65%, #bfdbfe);
+}
+
+.welcome-screen {
+  text-align: center;
+  padding: 40px 60px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 18px 40px rgba(29, 78, 216, 0.18);
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  transition: all 0.8s ease;
+}
+
+.welcome-screen.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.welcome-screen.is-exiting {
+  opacity: 0;
+  transform: translateY(-18px) scale(1.04);
+}
+
+.welcome-tag {
+  margin: 0 0 12px;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.welcome-screen h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #1e3a8a;
+}
+
+.welcome-sub {
+  margin: 12px 0 0;
+  color: #4b5563;
+  font-size: 20px;
+}
+
+.site-shell {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.home-enter {
+  opacity: 0;
+  transform: translateY(28px);
+  animation: homeFadeUp 0.8s ease forwards;
+}
+
+@keyframes homeFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #dce3f9;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(54, 78, 140, 0.12);
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* カード部分のデザイン */
+.card {
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #dce3f9;
+  box-shadow: 0 12px 30px rgba(54, 78, 140, 0.15);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 見出しのデザイン */
+h1 {
+  margin: 0 0 16px;
+  color: #1e3a8a;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+/* ボタンをクリックしたときに見出しの色を変える */
+h1.clicked {
+  color: #d62828;
+}
+
+/* 文章のデザイン */
+p {
+  margin: 0 0 24px;
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  padding: 14px;
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.info-item span {
+  display: block;
+  margin-bottom: 6px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.info-item strong {
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.meta-list {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: #374151;
+  line-height: 1.9;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid #bfdbfe;
+}
+
+.home-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondary-button {
+  background: linear-gradient(135deg, #111827, #374151);
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.3);
+}
+
+.message-box {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  color: #334155;
+}
+
+.js-practice-block {
+  margin-top: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+#textInput {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.info-details {
+  margin: 0 0 20px;
+  padding: 14px;
+  background: #f8fbff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+}
+
+.info-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.info-details p {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.mini-html-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mini-tip {
+  padding: 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+}
+
+.mini-tip h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #1d4ed8;
+}
+
+.mini-tip p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.css-sample {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0 12px;
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+.shadow-sample {
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+}
+
+.radius-sample {
+  border-radius: 20px;
+}
+
+.transform-sample {
+  transform: rotate(12deg);
+}
+
+.transition-sample {
+  transition: transform 0.3s ease;
+}
+
+.transition-sample:hover {
+  transform: scale(1.08);
+}
+
+.lazy-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(30, 64, 175, 0.15);
+}
+
+/* ボタンのデザイン */
+button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #fff7ed, transparent 30%),
+    linear-gradient(135deg, #fff6ee, #ffe8d8 55%, #fffaf6);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.shop-shell {
+  max-width: 1200px;
+}
+
+.shop-hero {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 28px;
+  background: linear-gradient(135deg, #fff7f0, #ffffff);
+  border: 1px solid #f4c8a7;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(164, 72, 16, 0.12);
+}
+
+.shop-hero h1 {
+  margin-bottom: 8px;
+  color: #7c2d12;
+}
+
+.shop-hero p {
+  color: #9a5a38;
+}
+
+.hero-badge {
+  padding: 20px;
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(234, 88, 12, 0.3);
+}
+
+.hero-badge span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.hero-badge strong {
+  font-size: 28px;
+}
+
+.shop-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.search-box {
+  display: grid;
+  gap: 8px;
+}
+
+.search-box label {
+  font-weight: 700;
+  color: #9a5a38;
+}
+
+.search-box input {
+  width: 280px;
+  padding: 10px 12px;
+  border: 1px solid #fdba74;
+  border-radius: 10px;
+  background: #fffdfb;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: 8px 14px;
+  background: #ffedd5;
+  color: #9a5a38;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+.filter-chip.active {
+  background: #ea580c;
+  color: #fff;
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.product-card,
+.cart-card {
+  padding: 18px;
+  background: #fffdfb;
+  border: 1px solid #fed7aa;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(180, 83, 9, 0.1);
+}
+
+.product-card h3 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+  color: #7c2d12;
+}
+
+.product-card p {
+  margin-bottom: 14px;
+  color: #b45309;
+}
+
+.product-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #ffedd5;
+  color: #c2410c;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.add-cart-button,
+.checkout-button {
+  width: 100%;
+  background: linear-gradient(135deg, #ea580c, #f97316);
+}
+
+.cart-panel {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cart-items {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #fed7aa;
+}
+
+.cart-item span {
+  display: block;
+  margin-bottom: 4px;
+  color: #7c2d12;
+  font-weight: 700;
+}
+
+.cart-item small {
+  color: #b45309;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #fed7aa;
+}
+
+.empty-cart {
+  margin: 0;
+  color: #9a5a38;
+}
+
+.remove-cart-button {
+  padding: 8px 12px;
+  background: #7c2d12;
+  box-shadow: none;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .shop-hero,
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-grid,
+  .tech-grid,
+  .mini-html-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* クリックしたとき */
+button.clicked {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* マウスを乗せたとき */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* クリック中 */
+button:active {
+  transform: translateY(0);
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-grid,
+  .tech-grid,
+  .mini-html-grid {
+    grid-template-columns: 1fr;
+  }
+}

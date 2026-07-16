@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptの練習</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="topbar">
+            <div class="brand">JavaScript Practice</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="card">
+            <div class="eyebrow">JS Practice</div>
+            <h1 id="jsTitle">JavaScriptだけで作るページ</h1>
+            <p>
+                このページは、JavaScriptで動きを作る練習用の画面です。
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>使う技術</span>
+                    <strong>JavaScript</strong>
+                </div>
+                <div class="info-item">
+                    <span>学習内容</span>
+                    <strong>イベント処理</strong>
+                </div>
+                <div class="info-item">
+                    <span>目的</span>
+                    <strong>動きの学習</strong>
+                </div>
+            </div>
+
+            <button id="jsButton">クリックして色を変える</button>
+            <p id="jsMessage" class="message-box">ここにメッセージが表示されます。</p>
+
+            <div class="js-practice-block">
+                <button id="countButton" class="secondary-button">カウントアップ</button>
+                <p id="countResult" class="message-box">0</p>
+            </div>
+
+            <div class="js-practice-block">
+                <label for="textInput" class="input-label">入力した文字を表示</label>
+                <input id="textInput" type="text" placeholder="ここに文字を入れてください">
+                <p id="textResult" class="message-box">入力内容がここに表示されます</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/js-only.js"></script>
+</body>
+
+</html>

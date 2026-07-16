@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSSの練習</title>
+
+    <!-- CSSファイルを読み込む -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="site-shell home-enter">
+        <header class="topbar">
+            <div class="brand">My Portfolio</div>
+            <nav class="nav-links">
+                <a href="about.html">About</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+                <a href="js-only.html">JS Practice</a>
+            </nav>
+        </header>
+
+        <div class="card">
+            <div class="eyebrow">Portfolio</div>
+            <h1 id="titleText">原 知輝</h1>
+
+            <p>
+                Web制作とUIデザインに興味があり、ユーザーに伝わる見た目と使いやすさを大切にしています。
+                これまでに少ない工数で効果の出るページ制作を行ってきました。
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>職種</span>
+                    <strong>エンジニア</strong>
+                </div>
+                <div class="info-item">
+                    <span>所在地</span>
+                    <strong>神戸</strong>
+                </div>
+                <div class="info-item">
+                    <span>経験年数</span>
+                    <strong>3年ちょっと</strong>
+                </div>
+            </div>
+
+            <div class="portfolio-links">
+                <a href="about.html" class="page-link">Aboutページへ</a>
+                <a href="works.html" class="page-link">Worksページへ</a>
+                <a href="contact.html" class="page-link">Contactページへ</a>
+                <a href="js-only.html" class="page-link">JS Practiceページへ</a>
+            </div>
+
+            <ul class="meta-list">
+                <li>HTML/CSSを使ったコーポレートサイト制作</li>
+                <li>レスポンシブデザインに対応した実装</li>
+                <li>ユーザー体験を意識したUI改善</li>
+            </ul>
+
+            <div class="home-actions">
+                <button id="colorButton">クリックすると名前の色が変わる</button>
+                <a href="ec-app.html" class="page-link">応用はこちら</a>
+                <button id="reloadButton" class="secondary-button">スーパーリロード</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const colorButton = document.getElementById('colorButton');
+        const titleText = document.getElementById('titleText');
+        const reloadButton = document.getElementById('reloadButton');
+
+        colorButton.addEventListener('click', () => {
+            titleText.classList.toggle('clicked');
+        });
+
+        reloadButton.addEventListener('click', () => {
+            window.location.href = 'welcome.html';
+        });
+    </script>
+</body>
+
+</html>
