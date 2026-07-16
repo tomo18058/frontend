@@ -12,16 +12,16 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: radial-gradient(circle at top, #ffffff, #dbeafe 65%, #bfdbfe);
+  background: radial-gradient(circle at top, #fffaf5, #ffe7d3 65%, #ffd4aa);
 }
 
 .welcome-screen {
   text-align: center;
   padding: 40px 60px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #bfdbfe;
-  box-shadow: 0 18px 40px rgba(29, 78, 216, 0.18);
+  background: rgba(255, 250, 245, 0.9);
+  border: 1px solid #f3b88d;
+  box-shadow: 0 18px 40px rgba(170, 90, 36, 0.18);
   opacity: 0;
   transform: translateY(24px) scale(0.98);
   transition: all 0.8s ease;
@@ -39,7 +39,7 @@ body {
 
 .welcome-tag {
   margin: 0 0 12px;
-  color: #2563eb;
+  color: #a55325;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -48,12 +48,12 @@ body {
 .welcome-screen h1 {
   margin: 0;
   font-size: 48px;
-  color: #1e3a8a;
+  color: #9a4b1f;
 }
 
 .welcome-sub {
   margin: 12px 0 0;
-  color: #4b5563;
+  color: #8b4517;
   font-size: 20px;
 }
 
@@ -85,16 +85,16 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #dce3f9;
+  background: rgba(255, 248, 242, 0.92);
+  border: 1px solid #f5c7a5;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(54, 78, 140, 0.12);
+  box-shadow: 0 8px 20px rgba(170, 90, 36, 0.12);
 }
 
 .brand {
   font-size: 20px;
   font-weight: 700;
-  color: #1d4ed8;
+  color: #a55325;
 }
 
 .nav-links {
@@ -103,7 +103,7 @@ body {
 }
 
 .nav-links a {
-  color: #4b5563;
+  color: #8b4517;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -123,8 +123,8 @@ body {
   margin-bottom: 10px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: #dbeafe;
-  color: #1d4ed8;
+  background: #ffe9d6;
+  color: #a55325;
   font-size: 12px;
   font-weight: 700;
 }
@@ -132,7 +132,7 @@ body {
 /* 見出しのデザイン */
 h1 {
   margin: 0 0 16px;
-  color: #1e3a8a;
+  color: #9a4b1f;
   font-size: 36px;
   line-height: 1.3;
 }
@@ -159,8 +159,8 @@ p {
 
 .info-item {
   padding: 14px;
-  background: #f8fbff;
-  border: 1px solid #dbeafe;
+  background: #fff7f0;
+  border: 1px solid #f4bf92;
   border-radius: 12px;
 }
 
@@ -172,7 +172,7 @@ p {
 }
 
 .info-item strong {
-  color: #1f2937;
+  color: #7c2d12;
   font-size: 18px;
 }
 
@@ -190,15 +190,57 @@ p {
   margin-bottom: 20px;
 }
 
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.role-card {
+  padding: 14px;
+  background: #fff7f0;
+  border: 1px solid #f4bf92;
+  border-radius: 14px;
+}
+
+.role-card p {
+  margin: 10px 0 0;
+  font-size: 15px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.html-badge {
+  background: #ffedd5;
+  color: #9a4b1f;
+}
+
+.css-badge {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.js-badge {
+  background: #fed7aa;
+  color: #9a4b1f;
+}
+
 .page-link {
   display: inline-block;
   padding: 10px 14px;
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: #fff3e7;
+  color: #a55325;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
-  border: 1px solid #bfdbfe;
+  border: 1px solid #f3b88d;
 }
 
 .home-actions {
@@ -215,10 +257,10 @@ p {
 .message-box {
   margin-top: 18px;
   padding: 12px 14px;
-  background: #f8fafc;
-  border-left: 4px solid #2563eb;
+  background: #fff7f0;
+  border-left: 4px solid #c2410c;
   border-radius: 8px;
-  color: #334155;
+  color: #7c2d12;
 }
 
 .js-practice-block {
@@ -229,14 +271,14 @@ p {
   display: block;
   margin-bottom: 8px;
   font-weight: 700;
-  color: #1f2937;
+  color: #7c2d12;
 }
 
 #textInput {
   width: 100%;
   max-width: 360px;
   padding: 10px 12px;
-  border: 1px solid #bfdbfe;
+  border: 1px solid #f3b88d;
   border-radius: 10px;
   font-size: 15px;
 }
@@ -244,15 +286,15 @@ p {
 .info-details {
   margin: 0 0 20px;
   padding: 14px;
-  background: #f8fbff;
-  border: 1px solid #bfdbfe;
+  background: #fff7f0;
+  border: 1px solid #f3b88d;
   border-radius: 12px;
 }
 
 .info-details summary {
   cursor: pointer;
   font-weight: 700;
-  color: #1d4ed8;
+  color: #a55325;
 }
 
 .info-details p {
@@ -278,13 +320,13 @@ p {
   padding: 14px;
   border-radius: 10px;
   background: #ffffff;
-  border: 1px solid #dbeafe;
+  border: 1px solid #f4bf92;
 }
 
 .mini-tip h3 {
   margin: 0 0 8px;
   font-size: 16px;
-  color: #1d4ed8;
+  color: #a55325;
 }
 
 .mini-tip p {
@@ -296,11 +338,11 @@ p {
   width: 80px;
   height: 80px;
   margin: 10px 0 12px;
-  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
 }
 
 .shadow-sample {
-  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 12px 24px rgba(194, 65, 12, 0.25);
 }
 
 .radius-sample {
@@ -326,13 +368,13 @@ p {
   display: block;
   margin: 0 auto 20px;
   border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(30, 64, 175, 0.15);
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.16);
 }
 
 /* ボタンのデザイン */
 button {
   padding: 12px 24px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #c2410c, #f97316);
   color: #ffffff;
   border: none;
   border-radius: 999px;
@@ -340,7 +382,7 @@ button {
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 6px 16px rgba(194, 65, 12, 0.3);
 }
 
 body {
@@ -348,8 +390,8 @@ body {
   margin: 0;
   padding: 24px;
   background:
-    radial-gradient(circle at top left, #fff7ed, transparent 30%),
-    linear-gradient(135deg, #fff6ee, #ffe8d8 55%, #fffaf6);
+    radial-gradient(circle at top left, #ffe8d6, transparent 32%),
+    linear-gradient(135deg, #fff8f2, #ffd8b8 58%, #fff7ef);
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -364,27 +406,27 @@ body {
   align-items: center;
   margin-bottom: 24px;
   padding: 28px;
-  background: linear-gradient(135deg, #fff7f0, #ffffff);
-  border: 1px solid #f4c8a7;
+  background: linear-gradient(135deg, #fff0e4, #fffaf6);
+  border: 1px solid #f3b88d;
   border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(164, 72, 16, 0.12);
+  box-shadow: 0 18px 40px rgba(171, 78, 28, 0.14);
 }
 
 .shop-hero h1 {
   margin-bottom: 8px;
-  color: #7c2d12;
+  color: #9a4b1f;
 }
 
 .shop-hero p {
-  color: #9a5a38;
+  color: #b45a2a;
 }
 
 .hero-badge {
   padding: 20px;
-  background: linear-gradient(135deg, #ea580c, #f97316);
+  background: linear-gradient(135deg, #c2410c, #f97316);
   color: #fff;
   border-radius: 18px;
-  box-shadow: 0 10px 24px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.32);
 }
 
 .hero-badge span {
@@ -414,15 +456,15 @@ body {
 
 .search-box label {
   font-weight: 700;
-  color: #9a5a38;
+  color: #a55325;
 }
 
 .search-box input {
   width: 280px;
   padding: 10px 12px;
-  border: 1px solid #fdba74;
+  border: 1px solid #f5b27a;
   border-radius: 10px;
-  background: #fffdfb;
+  background: #fffaf5;
 }
 
 .filter-group {
@@ -440,7 +482,7 @@ body {
 }
 
 .filter-chip.active {
-  background: #ea580c;
+  background: #c2410c;
   color: #fff;
 }
 
@@ -459,16 +501,16 @@ body {
 .product-card,
 .cart-card {
   padding: 18px;
-  background: #fffdfb;
-  border: 1px solid #fed7aa;
+  background: #fffaf5;
+  border: 1px solid #f4bf92;
   border-radius: 18px;
-  box-shadow: 0 10px 24px rgba(180, 83, 9, 0.1);
+  box-shadow: 0 10px 24px rgba(180, 83, 9, 0.12);
 }
 
 .product-card h3 {
   margin: 12px 0 8px;
   font-size: 20px;
-  color: #7c2d12;
+  color: #9a4b1f;
 }
 
 .product-card p {
@@ -489,7 +531,7 @@ body {
 .add-cart-button,
 .checkout-button {
   width: 100%;
-  background: linear-gradient(135deg, #ea580c, #f97316);
+  background: linear-gradient(135deg, #c2410c, #f97316);
 }
 
 .cart-panel {
@@ -523,7 +565,7 @@ body {
 .cart-item span {
   display: block;
   margin-bottom: 4px;
-  color: #7c2d12;
+  color: #9a4b1f;
   font-weight: 700;
 }
 
@@ -546,7 +588,7 @@ body {
 
 .remove-cart-button {
   padding: 8px 12px;
-  background: #7c2d12;
+  background: #9a4b1f;
   box-shadow: none;
   font-size: 13px;
 }
@@ -591,13 +633,13 @@ button.clicked {
 /* マウスを乗せたとき */
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 20px rgba(194, 65, 12, 0.38);
 }
 
 /* クリック中 */
 button:active {
   transform: translateY(0);
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, #9a4b1f, #ea580c);
 }
 
 @media (max-width: 700px) {
